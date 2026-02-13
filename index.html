@@ -69,51 +69,32 @@
                         <input type="email" class="form-control" placeholder="Email Address *" />
                         <input type="tel" class="form-control" placeholder="Mobile Number *" />
                         <input type="State" class="form-control" placeholder="State *" />
-                        <select class="form-control custom-select" required>
-                            <option value="" disabled selected>Select Course *</option>
+                        <div class="row course-row">
+                            <!-- Course Dropdown -->
+                            <div class="col-md-6 col-12">
+                                <select id="course" class="form-control custom-select" required>
+                                    <option value="" disabled selected>Course *</option>
+                                    <option value="btech">B.Tech</option>
+                                    <option value="bba">BBA Hons.</option>
+                                    <option value="bca">BCA Hons.</option>
+                                    <option value="bcom">B.Com Hons.</option>
+                                    <option value="bsc">B.Sc Hons.</option>
+                                    <option value="ba">B.A</option>
+                                    <option value="bed">Integrated B.Ed</option>
+                                    <option value="mba">MBA</option>
+                                    <option value="msc">M.Sc</option>
+                                    <option value="ma">MA</option>
+                                </select>
+                            </div>
 
-                            <!-- B.Tech -->
-                            <option>B.Tech Computer Science Engineering (CSE)</option>
-                            <option>B.Tech Computer Science Engineering (Artificial Intelligence & Machine Learning)
-                            </option>
-                            <option>B.Tech Computer Science Engineering (Data Science)</option>
-                            <option>B.Tech Computer Science Engineering (Cyber Security)</option>
-                            <option>B.Tech Electronics and Communication Engineering (ECE)</option>
+                            <!-- Specialization Dropdown -->
+                            <div class="col-md-6 col-12">
+                                <select id="specialization" class="form-control custom-select" required>
+                                    <option value="" disabled selected>Specialization *</option>
+                                </select>
+                            </div>
+                        </div>
 
-                            <!-- BCA -->
-                            <option>BCA (Hons.) Artificial Intelligence & Data Science</option>
-                            <option>BCA (Hons.) Artificial Intelligence & Robotics</option>
-                            <option>BCA (Hons.) Artificial Intelligence & DevOps</option>
-                            <option>BCA (Hons.) Cyber Security & Digital Forensics</option>
-                            <option>BCA (Hons.) Cloud Computing & Cyber Security</option>
-
-                            <!-- BBA -->
-                            <option>BBA (Hons.) Port & Supply Chain Management</option>
-                            <option>BBA (Hons.) Global Business Management</option>
-                            <option>BBA (Hons.) Business Analytics & Digital Marketing</option>
-                            <option>BBA (Hons.) Finance & HR Management</option>
-
-                            <!-- Education -->
-                            <option>B.Sc B.Ed (Mathematics)</option>
-                            <option>B.Sc B.Ed (Chemistry)</option>
-                            <option>B.Sc B.Ed (Physics)</option>
-                            <option>BA B.Ed (English)</option>
-                            <option>BA B.Ed (Psychology)</option>
-
-                            <!-- Other UG -->
-                            <option>B.Sc (Hons.) Applied Psychology</option>
-                            <option>B.Com (Hons.) International Accounting with ACCA-UK</option>
-                            <option>B.Com (Hons.) Capital Market</option>
-                            <option>BA Sanskrit</option>
-
-                            <!-- PG -->
-                            <option>MBA (Marketing / Finance / Human Resources & Organizational Development / Supply
-                                Chain & Logistics)</option>
-                            <option>M.Sc Applied Psychology</option>
-                            <option>M.Sc Clinical Psychology</option>
-                            <option>MA Sanskrit</option>
-
-                        </select>
 
                         <STYLE>
                             .custom-select {
@@ -123,7 +104,7 @@
 
 
                                 background-color: #fff;
-                                color: #333;
+                                color: #525252;
                                 appearance: none;
                                 -webkit-appearance: none;
                                 -moz-appearance: none;
@@ -223,7 +204,7 @@
         </div>
     </div>
     <style>
-       
+
     </style>
 
 
@@ -750,10 +731,10 @@
 
     <section class="recruiters-section py-3">
         <div class="container">
-            <h2 class="section-heading text-center text-dark mb-4">
-                Top Recruiters
+            <h2 class="section-heading text-center text-dark">
+                Our Placement Partners
             </h2>
-
+              <div class="divider mx-auto mb-4"></div>
             <div id="recruitersCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
 
                 <div class="carousel-inner">
@@ -971,7 +952,7 @@
     </div>
 
     <style>
-     
+
     </style>
 
 
@@ -1026,6 +1007,4 @@
 
 </body>
 
-
 </html>
-
